@@ -1,0 +1,127 @@
+
+.posts-section
+  margin-top: 120px
+  padding-bottom: 130px
+  &__cards
+    margin-top: 60px
+
+  &-cards
+    width: 100%
+    height: 742px
+    +flexBox(start,space-between,wrap,column)
+    align-content: space-between
+
+    &-card
+      width: 32%
+      &:nth-child(even)
+        margin-top: 10px
+      &__pic
+        @for $i from 1 to 4
+          &--pic#{$i}
+            background-image: url("../assets/section10-pic#{$i}.png")
+            background-repeat: no-repeat
+
+        &--pic1
+            height: 181px
+
+        &--pic2
+          height: 209px
+
+        &--pic3
+          height: 208px
+
+        &--pic4
+          height: 45px
+          background: #000
+
+        &--pic5
+          height: 197px
+          background-image: url("../assets/section10-pic5.png")
+          background-repeat: no-repeat
+
+        &--pic6
+          height: 158px
+          background: #dbdbdb
+          +flexBox(space-evenly,center, nowrap, column)
+          position: relative
+          &::after
+            content: ''
+            width: 52px
+            height: 48px
+            display: block
+            position: absolute
+            background-image: url("../assets/section10-pic88.png")
+            bottom: 16px
+            right: 26px
+
+      &-pic
+        &-pic6
+          text-align: left
+          &__quote
+              width: 90%
+              color: #858585
+              font-size: 24px
+              font-style: italic
+
+          &__auth
+              width: 90%
+              font-size: 12px
+              color: #bcbcbc
+
+      &__bottom
+        margin-top: 16px
+        height: 37px
+        border-top: 1px solid rgba(0,0,0,0.2)
+        border-bottom: 3px solid black
+
+      &-bottom
+        +flexBox(space-between)
+        line-height: 37px
+        font-size: 12px
+        text-transform: uppercase
+        color: #9B9B9B
+        font-family: Lato, sans-serif
+
+
+      &-text
+        text-align: left
+
+        &__title
+          margin-top: 10px
+        &-title
+          +flexBox(start,flex-end)
+          &__sq
+            width: 36px
+            height: 32px
+          &__head
+            margin-left: 9px
+            font-weight: bold
+            font-size: 18px
+            padding-bottom: 2px
+
+        &__content
+          font-family: Lato, sans-serif
+          color: #676767
+          font-size: 14px
+          line-height: 18px
+          margin-top: 16px
+
+  &__button
+    +marginCentered
+    margin-top: 90px
+    padding-left: 70px
+    padding-right: 70px
+    font-weight: bold
+
+
+
+
+
+
+
+
+
+
+
+
+

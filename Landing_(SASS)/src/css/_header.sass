@@ -1,0 +1,60 @@
+
+body
+  +zeroIndent
+
+.container
+  +marginCentered
+  background: url("../assets/pageBG.png") repeat
+  text-align: center
+  font-family: Montserrat, sans-serif
+  width: $containerWidth
+  max-width: 1400px
+
+.block-container
+  +marginCentered
+  margin-top: 72px
+  width: 80%
+  &--without-mtop
+    margin-top: 0
+
+
+.header
+  background: url("../assets/full_page_01.png") no-repeat
+  background-position: center
+  height: 900px
+  text-align: left
+
+  &-text
+    padding-top: 531px
+    color: $themeButtonColor
+
+    &__text1
+      text-transform: uppercase
+      font-family: Montserrat, sans-serif
+      font-size: 48px
+      margin: 150px 0 10px
+
+    &__text2
+      font-family: Lato, sans-serif
+      margin: 10px 0 10px
+
+    &__text3
+      text-transform: uppercase
+      font-family: Montserrat, sans-serif
+      display: inline-block
+      font-size: 54px
+      padding: 20px
+      background-color: rgba(0, 0, 0, 0.3)
+      margin-top: 20px
+      border: 1px solid darken($themeButtonColor, 25%)
+      border-bottom-color: $themeButtonColor
+
+
+p
+  +zeroIndent
+
+
+.theme-color
+  color: $themeColor
+
+

@@ -1,0 +1,29 @@
+.favourites{
+  &-container{
+  width: 90%;
+  margin: 0 auto;
+}
+  &-title{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: indianred;
+  }
+
+}
+
+.fav{
+  &-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+  &-buttons {
+    margin-top: 40px;
+    & button{
+      width: 130px;
+    }
+  }
+
+}

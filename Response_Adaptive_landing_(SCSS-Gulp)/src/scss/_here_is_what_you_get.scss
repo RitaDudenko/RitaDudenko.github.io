@@ -1,0 +1,108 @@
+@import "vars";
+@import "mixins";
+
+.here-is-what-you-get{
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 1vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "title"
+                       "features"
+                       "image";
+
+      &__title{
+        grid-area: title;
+         font-size: 35px;
+        color: $theme_color;
+      }
+
+}
+
+  .feature{
+    @include flex-column;
+    align-items: center;
+    width:90%;
+    margin-top: 35px;
+
+
+
+     &__description{
+
+          &-title{
+            font-size: 20px;
+          }
+
+          &-text{
+            @include margin-center;
+            width: 90%;
+            font-size: 15px;
+            color: #848E97;
+            line-height: 20px;
+          }
+     }
+  }
+
+.feature-container{
+  @include flex-column;
+  grid-area: features;
+  align-items: center;
+  width: 100%;
+}
+
+.editor-image{
+  grid-area: image;
+  margin-top: 57px;
+}
+
+
+@media screen and (min-width: 481px){
+  .feature{
+    flex-direction: row;
+
+
+
+    &__img{
+      min-width: 111px;
+
+    }
+
+      &__description{
+        text-align: left;
+        padding-left: 4%;
+
+           &-text{
+             width: 100%;
+           }
+      }
+  }
+
+}
+
+@media screen and (min-width: 993px) {
+  .here-is-what-you-get {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "features title" "features image";
+    text-align: left;
+    padding-bottom: 10vh;
+
+  }
+
+  .feature{
+     margin-top: 0;
+
+    &__img{
+       text-align: center;
+   }
+
+ }
+
+
+}
+
+.editor-image{
+  margin-top: 0;
+}
+
+

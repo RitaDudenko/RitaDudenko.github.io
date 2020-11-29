@@ -1,0 +1,106 @@
+
+@import "vars";
+@import "mixin";
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 38px;
+
+}
+
+.resent-posts {
+      padding-bottom: 40px;
+
+    &-wrapper {
+      width: $container-width;
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+
+}
+
+
+.post {
+  @include post-width($container-width, $col);
+  @include flex-column;
+  box-sizing: border-box;
+  margin-top: 16px;
+
+  @media screen and (min-width: 500px) {
+    flex-direction: row;
+
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    $col: 2;
+    @include post-width($container-width,  $col);
+
+
+    &:nth-child(2n){
+      margin-left: 10%;
+    }
+
+  }
+
+
+     &--not-mobile{
+       display: none;
+
+       @media screen and (min-width: 500px) {
+         display: flex;
+       }
+
+
+     }
+
+     & + & {
+       margin-top: 23px;
+     }
+
+
+     &__title {
+       font-size: 14px;
+       margin-bottom: 0;
+
+     }
+
+     &__subtitle {
+       font-size: 11px;
+       color: $comment-sub-color;
+       margin-bottom: 0;
+     }
+
+     &__text {
+       display: none;
+       font-size: 14px;
+       line-height: 25px;
+       max-width: $max-post-text-width;
+
+
+       @media screen and (min-width: 500px) {
+        display: block;
+    }
+
+
+
+         &-wrapper{
+             @include flex-column;
+
+
+           @media screen and (min-width: 500px) {
+             margin-left: 4%;;
+           }
+
+
+       }
+
+
+  }
+
+
+}
+

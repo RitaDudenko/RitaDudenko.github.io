@@ -1,0 +1,178 @@
+
+.separate-line
+  width: 60px
+  border: 2px solid $themeColor
+  margin-top: 52px
+  &--longer
+    width: 100%
+
+  &--dark
+    border-color: $btnDarkBg
+
+  &--thinner
+    border-width: 1px
+
+  &--less-margin
+    margin: 25px 0
+
+
+
+
+
+.section-title
+  font-size: 22pt
+  text-transform: uppercase
+  margin-bottom: 32px
+  font-weight: bold
+  color: rgba(51, 51, 51, 255)
+  &--white
+    color: white
+  &--capitalize
+    text-transform: capitalize
+  &--smaller
+    font-size: 18pt
+
+.section-subtitle
+    font: 17px Lato, sans-serif
+    color: rgba(77, 73, 67, 255)
+
+
+.what-they-said
+  &__content
+    margin-top: 57px
+  &__award
+    margin-top: 60px
+
+  &-nav
+    width: 100%
+    margin-top: 60px
+    text-transform: uppercase
+    +flexBox(space-between)
+
+    &__title
+      font-weight: bold
+      font-size: 28pt
+
+    &-menu
+      list-style-type: none
+      width: 65%
+      +flexBox(space-between, center)
+      &__item
+        cursor: pointer
+        &:hover
+          color: $themeColor
+
+        &--after
+          &::after
+            content: url("../assets/arrow-basic.png")
+            position: relative
+            top: -3px
+          &:hover::after
+             content: url("../assets/arrow-hover.png")
+  &__underline
+    margin-top: 10px
+    margin-bottom: 100px
+
+  &__business-consulting
+    margin-top: 57px
+
+  &-business-consulting
+     &-pictures
+        display: inline-block
+        // width: 570px
+        width: 53%
+        height: 318px
+        box-sizing: border-box
+        &__pic
+          width: 270px
+          height: 148px
+          float: left
+          //margin-right: 30px
+          &--first
+            +picModification("../assets/Layer%2023@1X.png")
+
+          &--second
+            +picModification("../assets/Layer%2024@1X.png")
+
+          &--third
+            +picModification("../assets/Layer%2025@1X.png")
+
+          &--forth
+            +picModification("../assets/Layer%2026@1X.png")
+
+          &:nth-child(2n)
+             margin-right: 0
+
+          &:nth-child(n+2)
+             margin-bottom: 34px
+
+        &__btn
+           font-size: 14px
+           position: absolute
+           left: 13px
+           bottom: 11px
+
+     &__text
+        vertical-align: top
+        width: 40%
+        //width: 550px
+        //margin-left: 30px
+
+
+     &-text
+        display: inline-block
+        box-sizing: border-box
+        padding: 0
+        text-align: justify
+        font-size: 14px
+        color: #333
+        line-height: 20px
+
+        &__title
+          font-size: 18px
+          text-transform: uppercase
+          margin: 0 0 26px
+          font-weight: 800
+
+        &__text
+          margin-top: 30px
+
+        &__button
+          margin-top: 14px
+
+
+.text-btn
+   box-sizing: border-box
+   padding: 16px 14px
+   color: $themeButtonColor
+   background-color: $btnDarkBg
+   &--sqr
+     padding: 14px
+     min-width: 42px
+     text-align: center
+   &--small-sqr
+     padding: 8px
+     text-align: center
+
+
+.btn
+    border: 0
+    padding: 20px 19px
+    color: $themeButtonColor
+    font: 14px Lato, sans-serif
+    background-color: $themeColor
+    display: block
+    cursor: pointer
+    &--below
+      padding: 14px 19px
+    &--sqr
+      padding: 13px 14px
+    &--transparent-bg
+      background-color: transparent
+    &--white-border
+      border: 1px solid $themeButtonColor
+    &--rounder
+      border-radius: 5px
+
+
+

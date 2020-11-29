@@ -1,0 +1,54 @@
+@import "vars";
+@import "mixins";
+
+body,
+html {
+  @include reset-margin-padding;
+  cursor: default;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+a {
+  color: inherit;
+  text-decoration: none;}
+
+button {
+  outline: none;}
+
+.background {
+  min-width: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--navbar {
+    background-color: #27262A;}
+
+  &--header {
+    background-image: url(../assets/img/header_img/header-background.png);
+    background-position: 50% 40%;}
+
+  &--people-are-talking-about-fork {
+    background-image: url(../assets/img/block_people_are_talking_about_fork/testmonials-bg.png);
+    background-position: 50% 40%;}
+
+  &--fork-subscription-pricing {
+    background-image: url("../assets/img/block_fork_subscription_pricing/pricing-bg.png");
+    background-color: $price_section_color;
+    background-position: top;}
+
+  &--here-is-what-you-get {
+    background-color: #F4F4F4;}
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  min-width: 300px;
+  max-width: 1180px;
+}
+
+@media screen and (min-width: 1200px) {
+  .background {
+    background-size: 100%;}
+}

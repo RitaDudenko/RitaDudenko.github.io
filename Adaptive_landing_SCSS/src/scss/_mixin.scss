@@ -1,0 +1,49 @@
+@import "vars";
+
+@mixin font-family {
+  font-family: "Roboto Light", sans-serif;
+
+}
+
+ @mixin margin-centered {
+   margin: 0 auto;
+
+ }
+
+ @mixin min-screen-size {
+   min-width: 320px;
+
+ }
+
+ @mixin menu-abs-pos{
+    right: (100% - $container-width) / 2;
+    top: $btn-menu-height;
+ }
+
+
+ @mixin post-width($width, $number){
+   width: $width / $number;
+
+ }
+
+@mixin icon-wrapper-width{
+  width: ($icon-border-size + 1px) * $icon-number;
+
+}
+
+
+@mixin icon-border($border-color){
+   width: $icon-border-size;
+  height: $icon-border-size;
+  border: 2px solid $border-color;
+  border-radius: 50%;
+}
+
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+

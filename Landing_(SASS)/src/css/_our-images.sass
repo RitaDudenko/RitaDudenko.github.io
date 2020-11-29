@@ -1,0 +1,80 @@
+
+.our-images-section
+  padding-bottom: 80px
+  &__navbar
+      +flexBox(center)
+      margin-bottom: 45px
+      margin-top: 60px
+
+  &__link
+     display: block
+     border: 1px solid $btnDarkBg
+     padding: 0 35px
+     font-size: 14px
+     height: 40px
+     line-height: 40px
+     text-decoration: none
+     color: $btnDarkBg
+     margin: 0 7px
+     transition: 0.1s all ease-in-out
+     &:hover
+       background: $btnDarkBg
+       color: $themeColor
+
+  &__images-wrapper
+     +flexBox(space-between,start,wrap)
+
+  &__image
+     margin: 8px 0
+     flex-basis: 254px
+     cursor: pointer
+     height: 281px
+     position: relative
+     &:hover .frontside
+        transform: rotateX(90deg)
+     &:hover .backside
+        transform: rotateX(0deg)
+
+  &-image
+     border: 1px solid #333
+     box-sizing: border-box
+
+     &__content
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        position: absolute
+
+     &-content
+        +flexBox(center,center,nowrap,column)
+        &__title
+          font-size: 18px
+          font-weight: 400
+          margin: 0
+
+        &__text
+           color: rgba(91, 91, 91, 1)
+           max-width: 80%
+
+        &__btn
+           margin-top: 30px
+           padding: 15px 36px
+
+
+
+
+
+
+.backside
+  transition: all 3s ease-in
+  background: #fff
+  transform: rotateX(180deg)
+
+
+.frontside
+  transition: all 2s ease-in
+
+
+
+

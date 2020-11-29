@@ -1,0 +1,144 @@
+@import "mixin";
+
+body{
+  width: 100%;
+  margin: 0;
+}
+
+.container{
+  @include font-family;
+  @include min-screen-size;
+  @include margin-centered;
+  width: $container-width;
+  color: $text-color;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1280px;
+  }
+
+}
+
+.header{
+  &__btn-wrapper{
+    text-align: right;
+
+    @media screen and (min-width: 631px) {
+      display: none;
+
+    }
+
+  }
+
+  &__nav{
+     &-menu{
+       @include menu-abs-pos;
+       display: none;
+       list-style-type: none;
+       text-transform: uppercase;
+       position: absolute;
+       background-color: $menu-bg;
+       width: 45vw;
+       padding-left: 0;
+
+       @media screen  and (min-width: 631px) {
+         @include margin-centered;
+         position: static;
+         width: 90%;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 23px;
+
+       }
+
+       @media screen  and (min-width: 900px) {
+         width: 80%;
+       }
+
+
+          & li {
+            font-size:14px;
+            line-height: 32px;
+            border-bottom: 1px solid $menu-item-line-hover;
+            padding-left: 4vw;
+
+            @media screen and (min-width: 631px) {
+              padding-left: 0;
+              border-bottom: none;
+            }
+
+
+            &:hover{
+              color: $menu-item-hover;
+              background-color: $menu-item-line-hover;
+
+              @media screen and (min-width: 631px) {
+                background-color: transparent;
+                cursor: pointer;
+              }
+            }
+          }
+       &--active{
+         display:block;
+
+         @media screen  and (min-width: 631px) {
+           @include margin-centered;
+           position: static;
+           width: 80%;
+           display: flex;
+           justify-content: space-between;
+           margin-top: 23px;
+
+         }
+
+         @media screen  and (min-width: 900px) {
+           width: 80%;
+         }
+
+       }
+
+     }
+
+  }
+
+  &__image{
+    background-image: url("../assets/images/intro-img 1.png");
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    margin-top: 23px;
+
+    @media screen and (orientation: landscape) and (min-width: 500px){
+      height: 55vh;
+    }
+
+    @media screen and  (min-width: 769px){
+      height: 361px;
+    }
+
+
+  }
+
+
+}
+
+.btn{
+  background-color: $btn-footer-bg-color;
+  width: 44px;
+  outline: none;
+
+
+  &-show{
+    height: $btn-menu-height;
+    background-image: url("../assets/images/menu-button.png");
+    background-position: center;
+    background-repeat: no-repeat ;
+  }
+
+  &-hidden{
+    @extend .btn-show;
+    background-image: url("../assets/images/menu-button (1).png");
+
+  }
+
+}
+

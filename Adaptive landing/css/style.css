@@ -1,0 +1,407 @@
+body, html {
+    width: 100vw;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #141515;
+
+
+}
+
+.container {
+    color: #FFFFFF;
+    width: 100vw;
+
+}
+
+a, button {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.minor_width {
+    width: 92vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1vw;
+    list-style-type: none;
+    line-height: 9vh;
+    width: 85vw;
+    top: 3vh;
+    left: 10vw;
+
+}
+
+
+.active {
+    display: block;
+}
+
+.menu li {
+    padding-left: 8vw;
+    text-align: left;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(250, 247, 247, 0.7);
+}
+
+.menu li:last-child {
+    font-size: 14px;
+    border-bottom: none;
+
+}
+
+.menu li:hover {
+    color: #F38A03;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_button {
+    background-color: #141515;
+    border: transparent;
+    outline: none;
+
+}
+
+.info_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.info_background {
+    width: 100vw;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.info {
+    width: 60vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.gym_name {
+    margin-top: 60px;
+    width: 60vw;
+    background-color: #141515;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 110px;
+
+}
+
+.website_btn {
+    text-decoration: underline;
+    background-color: #141515;
+    width: 35vw;
+    line-height: 36px;
+    margin-top: 14px;
+    margin-bottom: 250px;
+
+}
+
+.rectangle {
+    background-color: #ED1260;
+    width: 68vw;
+    height: 64px;
+}
+
+.text_info {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    clear: both;
+    text-align: left;
+    line-height: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.service_item {
+    width: 35vw;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 67px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.location {
+    border: 5px solid #ED1260;
+    box-sizing: border-box;
+    margin-top: 56px;
+    font-size: 0.75em;
+    line-height: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.location_point {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.placeholder {
+    position: absolute;
+    top: 50px;
+    left: 170px;
+
+}
+
+.footer {
+    width: 100vw;
+    margin-top: 73px;
+    border: 5px solid #F38A03;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.email, .phone, .address {
+    display: none;
+}
+
+.contacts {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 24px;
+}
+
+.contact_items_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.contact_item {
+    width: 68vw;
+    margin-top: 16px;
+    display: flex;
+    font-size: 1.2em;
+    line-height: 24px;
+}
+
+.contact_item:last-child {
+    margin-bottom: 16px;
+}
+
+.data {
+    text-align: left;
+    margin-left: 19px;
+}
+
+
+
+@media screen and (min-width: 690px)and (max-width: 768px) {
+    .menu {
+        width: 70vw;
+        left: 25vw;
+    }
+
+
+    .gym_name {
+        width: 50vw;
+
+    }
+
+    .website_btn {
+        width: 25vw;
+    }
+
+    .location {
+        width: 60vw;
+    }
+
+    .contact_item {
+        width: 32vw;
+        line-height: 30px;
+    }
+
+}
+
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 90vw;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .menu {
+        padding: 0;
+        position: static;
+        display: flex;
+        width: 35vw;
+        justify-content: space-between;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .menu li {
+        padding-left: 0;
+        font-size: 16px;
+        border-bottom: none;
+    }
+
+    .menu li:last-child {
+        font-size: 16px;
+    }
+
+
+    .menu_button {
+        display: none;
+    }
+
+    .info_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+
+    .info_background {
+        background-image: url("../images/9 1.png");
+        width: 75%;
+        display: inline-block;
+        margin-left: 12%;
+
+
+    }
+
+    .info {
+        width: 327px;
+        margin-left: 5%;
+
+
+    }
+
+    .gym_name {
+        width: 100%;
+    }
+
+    .website_btn {
+        width: 60%;
+
+    }
+
+    .rectangle {
+        width: 95px;
+        height: 347px;
+
+
+    }
+
+
+    .text_info {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+
+    }
+
+    .services {
+        width: 60vw;
+
+    }
+
+    .service_item {
+        width: 20vw;
+
+    }
+
+    .location.minor_width {
+        min-width: 360px;
+        width: 28vw;
+
+    }
+
+    .placeholder {
+        left: 200px;
+
+    }
+
+    .email, .phone, .address {
+        display: block;
+    }
+
+    .footer {
+        width: 80vw;
+        margin: 73px auto;
+        text-align: center;
+        border: none;
+
+    }
+
+    .contacts {
+        margin-left: 9vw;
+        text-align: left;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .contact_items_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+
+    }
+
+    .contact_item {
+        margin-top: 16px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        line-height: 30px;
+
+    }
+
+    .data,.contact_icon {
+        text-align: center;
+        margin-left: 0;
+    }
+
+}
+
+
+
+

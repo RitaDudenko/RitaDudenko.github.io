@@ -1,0 +1,41 @@
+.shopping-form{
+  width: 40%;
+
+  & input {
+    width: 100%;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  &-field{
+    margin-top: 15px;
+  }
+
+  &-btn{
+    margin-top: 15px;
+    padding-left: 30px;
+  }
+
+}
+
+.label{
+  font-size: 24px;
+}
+
+.error{
+  color: red;
+  font-style: italic;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.required{
+  color: red;
+}
+
+.footnote{
+  margin-top: 50px;
+ font-style: italic;
+  font-size: 17px;
+}

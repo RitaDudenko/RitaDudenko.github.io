@@ -1,0 +1,29 @@
+.body{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between ;
+}
+
+.title{
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  &-span{
+    color: indianred;
+  }
+}
+
+.subtitle{
+  width: 80%;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0 auto 40px;
+  text-align: center;
+  text-decoration: underline;
+
+
+}

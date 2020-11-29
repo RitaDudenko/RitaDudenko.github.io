@@ -1,0 +1,95 @@
+@import "resent_posts";
+
+a{
+  cursor:pointer;
+  text-decoration: none;
+}
+
+.footer{
+  background-color: $btn-footer-bg-color;
+  padding-top: 8px;
+  padding-bottom: 60px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    @include margin-centered;
+    max-width: 1280px;
+
+  }
+
+    &__title{
+      color: $footer-title-color;
+      text-align: center;
+
+    }
+
+    &__text{
+      font-size: 12px;
+      line-height: 20px;
+      color: $footer-text-color;
+      text-align: center;
+
+      @media screen and (min-width: 500px) {
+        @include margin-centered;
+        font-size: 16px;
+        line-height: 28px;
+        width: 80%;
+      }
+
+      &-contacts{
+        @include margin-centered;
+        width: 240px;
+
+        @media screen and (min-width: 500px) {
+             width: 80%;
+
+        }
+
+      }
+    }
+
+    a{
+      color: $footer-text-color;
+    }
+
+}
+
+.icon{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-wrapper{
+   @include icon-wrapper-width;
+   @include margin-centered;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  &--rss{
+    @include icon-border($icon-rss-color);
+  }
+
+  &--fb{
+    @include icon-border($icon-fb-color);
+  }
+
+  &--tw{
+    @include icon-border($icon-twit-color);
+  }
+
+  &--drib{
+    @include icon-border($icon-drib-color);
+  }
+
+  &--pin{
+    @include icon-border($icon-pin-color);
+  }
+
+
+}
+
+
