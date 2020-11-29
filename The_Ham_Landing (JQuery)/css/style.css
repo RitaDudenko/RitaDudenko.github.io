@@ -9,6 +9,10 @@ body,html{
 
 }
 
+button{
+    cursor: pointer;
+}
+
 a{
     color: white;
     cursor: pointer;
@@ -16,9 +20,6 @@ a{
 
 }
 
-button{
-    cursor: pointer;
-}
 
 .header_wrapper{
     background-image: url("../images/section-1(header).jpg");
